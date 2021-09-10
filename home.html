@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="utf-8">
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0px;
+                overflow: hidden;
+                background-color:purple;
+                opacity: 70%;
+                border: 5px solid violet;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: white;
+                color: black;
+            }
+              
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href = "{{ url_for('home') }}">Home</a></li>
+            <li><a href = "{{ url_for('create') }}">Create</a></li>
+            <li><a href = "{{ url_for('delete') }}">Delete</a></li>
+            <li><a href = "{{ url_for('status') }}">Status</a></li>
+        </ul>
+    </body>
+</html>

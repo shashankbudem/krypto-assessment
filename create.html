@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .formi{
+                text-align: center;
+                font-size: medium;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0px;
+                overflow: hidden;
+                background-color:purple;
+                opacity: 70%;
+                border: 5px solid violet;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: white;
+                color: black;
+            }
+              
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class="active" href = "#home">Home</a></li>
+            <li><a href = "create.html">Create</a></li>
+            <li><a href = "delete.html">Delete</a></li>
+            <li><a href = "status.html">Status</a></li>
+        </ul>
+        <form class="formi">
+            <label for="number"><b>Enter the value of CryptoCurrency</b></label><br>
+            <input type="number" placeholder="Enter value" name="setvalue" required> <br>
+            <br>
+            <label for="text"><b>Enter the CryptoCurrency</b></label><br>
+            <input type="text" placeholder="Enter value" name="crypto" required><br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
